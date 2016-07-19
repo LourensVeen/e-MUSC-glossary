@@ -62,25 +62,15 @@ This document contains a collection of terms relevant to the e-MUSC project, wit
 
 * Submodel Execution Loop (SEL)
     - The SEL is a generalised model of a submodel in the context of multi-scale modelling. It is used as a basis for defining coupling templates. According to the SEL, a submodel performs the following steps:
-      
-      i <- 0
-
-      f, θ <- **f_init**(t0)
-
-      while |θ[i]| > 0 do
-
-        **O_i**(f, t(e[i]), t(e[i+1])
-
-        i <- i + 1
-
-        f, θ[i] <- **S**(f, e[i], θ[i])
-
-        f, θ[i] <- **B**(f, e[i], θ[i])
-
-      end
-
-      **O_f**(f, t(e[i]))
-
-      Where f is the current state of the model, i the current iteration, θ[i] the model time corresponding to the i'th iteration, e[i] the current event, and **f_init**, **S**, **B**, **O_i** and **O_f** are operators. **f_init** initialises the state, **S** performs a state update, **B** updates the boundary conditions, **O_i** observes the state at model iteration i, and **O_f** observes the final state at the end of the model run. **f_init**, **S** and **B** can take input from outside of the submodel, while **O_i** and **O_f** produce output that can be sent to other submodels. See Coupling Templates for more.
+        + i <- 0
+        + f, θ <- *f_init*(t0)
+        + while |θ[i]| > 0 do
+            + *O_i*(f, t(e[i]), t(e[i+1])
+            + i <- i + 1
+            + f, θ[i] <- *S*(f, e[i], θ[i])
+            + f, θ[i] <- *B*(f, e[i], θ[i])
+        + end
+        + *O_f*(f, t(e[i]))
+      Where f is the current state of the model, i the current iteration, θ[i] the model time corresponding to the i'th iteration, e[i] the current event, and *f_init*, *S*, *B*, *O_i* and *O_f* are operators. *f_init* initialises the state, *S* performs a state update, *B* updates the boundary conditions, *O_i* observes the state at model iteration i, and *O_f* observes the final state at the end of the model run. *f_init*, *S* and *B* can take input from outside of the submodel, while *O_i* and *O_f* produce output that can be sent to other submodels. See Coupling Templates for more.
 
 
