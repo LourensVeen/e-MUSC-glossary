@@ -4,7 +4,7 @@ This document contains a collection of terms relevant to the e-MUSC project, wit
 
 
 * COAST
-    - Project in which the theory of Complex Automata (CxA) was developed. The Multiscale Modelling Language (MML) and Distributed Space Time Coupling Library (DSTC) originated here.
+    - Project in which the theory of Complex Automata (CxA) was developed. The Multiscale Modelling Language (MML) and Distributed Space Time Coupling Library (DSTC) originated here. http://www.complex-automata.org
 
 * Complex Automata
     - Paradigm in which multiple single-scale cellular automata are coupled to form a multi-scale model.
@@ -27,7 +27,7 @@ This document contains a collection of terms relevant to the e-MUSC project, wit
     - A 3D model of in-stent restenosis, successor of ISR2D. ISR3D comprises a CFD (Lattice Boltzmann) blood flow model, ...
 
 * MAPPER
-    - Project in which a theory of multi-scale modelling was developed, generalising from and building on Complex Automata theory and the COAST project.
+    - Project in which a theory of multi-scale modelling was developed, generalising from and building on Complex Automata theory and the COAST project. http://www.mapper-project.eu
 
 * MML
 
@@ -36,7 +36,9 @@ This document contains a collection of terms relevant to the e-MUSC project, wit
 
 
 * MUltiscale Coupling Library and Environment 2 (MUSCLE 2)
-    - A library for coupling in multiscale models. Developed by Joris Borgdorff as part of the European MAPPER project.
+    - A library for coupling in multiscale models. Developed by Joris Borgdorff as part of the European MAPPER project. http://apps.man.poznan.pl/trac/muscle
+
+* QosCosGrid (QCG)
 
 * Scale
     - A scale is an order of magnitude along a coordinate. A scale is defined by a minimum (δ) and maximum(Δ) granularity and a minimum (ω) and maximum (Ω) total size. A scale is *regular* if δ = Δ and ω = Ω. A regular scale is *point* if Δ = Ω. See Borgdorff, J. Distributed Multiscale Computing.
